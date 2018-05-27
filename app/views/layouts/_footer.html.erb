@@ -1,21 +1,21 @@
 <footer id="footer">
-	<div class="footer-info">
-		<div class="left-section">			
-			<p>
-				<% if user_signed_in? %>
-					<a href="/users/sign_out">
-						<i class="fas fa-lock-open"></i>
-					</a>
-				<% else %>
-					<a href="/users/sign_in">
-						<i class="fas fa-lock"></i>
-					</a> 					
-				<% end %>
-				Carnaval de Cadiz Website © 2018. All rights reserved.
-			</p>
-		</div>
-		<div>
-			<p>Website created by websiteMaster</p>
-		</div>
-	</div>
+  <div class="footer-info">
+    <div class="left-section">
+      <p>
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="fas fa-lock-open"></i>
+          <% end %>
+        <% else %>
+          <%= link_to new_user_session_path do %>
+            <i class="fas fa-lock"></i>
+          <% end %>
+        <% end %>
+        Carnaval de Cadiz Website © 2018. All rights reserved.
+      </p>
+    </div>
+    <div>
+      <p>Website created by websiteMaster</p>
+    </div>
+  </div>
 </footer>
