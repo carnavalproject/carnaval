@@ -16,24 +16,24 @@
 	&::-webkit-input-placeholder {
         @content;
 	}
-    &:-moz-placeholder {
-        @content;
-    }
-    &::-moz-placeholder {
-        @content;
-    }
-    &:-ms-input-placeholder {
-        @content;
-    }
+  &:-moz-placeholder {
+      @content;
+  }
+  &::-moz-placeholder {
+      @content;
+  }
+  &:-ms-input-placeholder {
+      @content;
+  }
 }
 
 // Mixins Transforms
 @mixin transform($transforms) {
   -webkit-transform: $transforms;
-    -moz-transform: $transforms;
-    -ms-transform: $transforms;
-    -o-transform: $transforms;
-    transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  -o-transform: $transforms;
+  transform: $transforms;
 }
 
 @mixin translate($x, $y) {
@@ -73,7 +73,7 @@
 @mixin ellipsis {
   white-space: nowrap;
   overflow: hidden;
-    text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 @mixin line-clamp($fontsize, $lineheight, $lines) {
@@ -81,11 +81,11 @@
   line-height: $lineheight !important;
   display: block; /* Fallback for non-webkit */
   display: -webkit-box;
-    height: $fontsize*$lineheight*$lines; /* Fallback for non-webkit */
-    -webkit-line-clamp: $lines;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  height: $fontsize*$lineheight*$lines; /* Fallback for non-webkit */
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // Mixin Images
@@ -105,10 +105,10 @@
 // Mixins Flex
 @mixin flex {
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 @mixin inline-flex {
