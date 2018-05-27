@@ -1,0 +1,56 @@
+@import "variables";
+
+// #header{
+// 	position: relative;
+// 	width: 100%;
+// 	height: 100%;
+// 	background: $primary-color;
+// 	>div{
+// 		padding: 0;
+// 		@include flex;
+// 		@include align-items(center);
+// 		@include justify-content(space-between);
+// 	}
+// 	#logo{
+// 		width: 600px;
+// 		padding: 10px;
+// 		background: #fff;
+// 		a {
+// 			@include trans;
+// 			background: image-url("logo.png") no-repeat center center;
+// 			background-size: contain;
+// 			display: inline-block;
+// 			width: 200px;
+// 			height: 100px;
+// 			text-indent: -9999px;
+// 			&:hover{
+// 				opacity: 0.8;
+// 			}
+// 		}
+// 	}
+// 	#main-navigation{
+// 		padding: 10px;
+// 		@include flex;
+// 		ol{
+// 			@include flex;
+// 			li{
+// 				margin-right: 20px;
+// 				address{
+// 					margin: 0;
+// 				}
+// 				a{
+// 					text-decoration: none;
+// 					color: #fff;
+// 					font-size: 1.1rem;
+// 				}
+// 			}
+// 		}
+// 		.menu{
+// 			margin-left: 30px;
+// 			a{
+// 				font-size: 1.1rem;
+// 				color: #fff;
+// 			}
+// 		}
+// 	}	
+// }

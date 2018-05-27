@@ -1,0 +1,22 @@
+@import "variables";
+
+#footer{
+	background: $primary-color;	
+	.footer-info{
+		padding: 1rem;
+		@include flex;
+		@include align-items(center);
+		@include justify-content(space-between);
+		div{
+			p{
+				color: #fff;
+				margin: 0;
+				a{
+					color: #fff;
+					text-decoration: none;
+					margin-right: 0.5rem;
+				}
+			}
+		}
+	}
+}

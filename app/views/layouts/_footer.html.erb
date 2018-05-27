@@ -1,4 +1,21 @@
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="/">GLOBAL FOOTER</a>
-  <a><%= Time.now.strftime('%m/%d/%Y - %H:%M:%S') %></a>
-</nav>
+<footer id="footer">
+	<div class="footer-info">
+		<div class="left-section">			
+			<p>
+				<% if user_signed_in? %>
+					<a href="/users/sign_out">
+						<i class="fas fa-lock-open"></i>
+					</a>
+				<% else %>
+					<a href="/users/sign_in">
+						<i class="fas fa-lock"></i>
+					</a> 					
+				<% end %>
+				Carnaval de Cadiz Website © 2018. All rights reserved.
+			</p>
+		</div>
+		<div>
+			<p>Website created by websiteMaster</p>
+		</div>
+	</div>
+</footer>
