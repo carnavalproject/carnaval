@@ -2,20 +2,69 @@
 
 #footer{
 	background: $primary-color;	
-	.footer-info{
-		padding: 1rem;
-		@include flex;
-		@include align-items(center);
-		@include justify-content(space-between);
-		div{
-			p{
-				color: #fff;
-				margin: 0;
+	padding: 5rem 0;
+	text-align: center;
+	#footer-navigation{
+		ul{
+			margin-bottom: 1.3rem;
+			text-align: center;
+			@include flex;
+			@include justify-content(center);
+			li{
 				a{
+					font-size: 0.9rem;
+					margin: 0 1rem;
+					text-transform: uppercase;
 					color: #fff;
 					text-decoration: none;
-					margin-right: 0.5rem;
+					&:hover{
+						text-decoration: underline;
+					}			
 				}
+			}
+		}
+	}
+	#footer-contact{
+		h4{
+			font-weight: 600;
+			color: #fff;
+		}
+		p{
+			color: #fff;
+			font-size: 0.9rem;
+		}
+	}
+	#footer-social-links{
+		ul{
+			@include flex;
+			@include justify-content(center);
+			li{
+				a{
+					font-size: 1.1rem;
+					padding: 0 0.5rem;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+#footer-info{
+	border-top: 1px solid #fff;
+	background: $primary-color;
+	padding: 1rem 5rem;
+	@include flex;
+	@include align-items(center);
+	@include justify-content(space-between);
+	div{
+		p{
+			color: #fff;
+			font-size: 0.8rem;
+			margin: 0;
+			a{
+				color: #fff;
+				text-decoration: none;
+				margin-right: 0.5rem;
 			}
 		}
 	}

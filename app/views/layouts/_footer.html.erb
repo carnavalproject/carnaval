@@ -1,21 +1,45 @@
 <footer id="footer">
-  <div class="footer-info">
-    <div class="left-section">
-      <p>
-        <% if user_signed_in? %>
-          <%= link_to destroy_user_session_path, method: :delete do %>
-            <i class="fas fa-lock-open"></i>
-          <% end %>
-        <% else %>
-          <%= link_to new_user_session_path do %>
-            <i class="fas fa-lock"></i>
-          <% end %>
-        <% end %>
-        Carnaval de Cadiz Website © 2018. All rights reserved.
-      </p>
+  <div class="container-fluid">
+    <div id="footer-logo">
+      
     </div>
-    <div>
-      <p>Website created by websiteMaster</p>
+    <div id="footer-navigation">
+      <ul class="format">
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
     </div>
-  </div>
+    <div id="footer-contact">
+      <h4>Carnaval de Cádiz</h4>
+      <p>38 Scholars Dr, Stockport SK3 0BS</p>
+      <p>Tel: 0255 689 2357 • Email: webmaster@domain.es</p>
+    </div>
+    <div id="footer-social-links"> 
+      <ul class="format">
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
 </footer>
+<div id="footer-info">
+  <div class="footer-info-left">
+    <p>
+      <% if user_signed_in? %>
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <i class="fas fa-lock-open"></i>
+        <% end %>
+      <% else %>
+        <%= link_to new_user_session_path do %>
+          <i class="fas fa-lock"></i>
+        <% end %>
+      <% end %>
+      Carnaval de Cadiz Website © 2018. All rights reserved.
+    </p>
+  </div>
+  <div class="footer-info-right">
+    <p>Website created by websiteMaster</p>
+  </div>
+</div>
+</div>
