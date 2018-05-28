@@ -1,1 +1,43 @@
 @import "variables";
+
+#header{
+	position: relative;
+	background: linear-gradient(to right, $third-color 60%, $primary-color 40%);
+	height: 115px;
+	padding: 1rem;
+	>div{
+		height: 100%;
+		@include flex;
+		@include align-items(center);
+		@include justify-content(space-between);
+	}
+	#header-logo{
+		a {
+			background: url('logo.png') no-repeat;
+			background-size: contain;
+			display: block;
+			width: 120px;
+			height: 80px;
+			text-indent: -9999px;
+			@include trans;
+			&:hover{
+				opacity: 0.8;
+			}
+		}	
+	}
+	#header-navigation{
+		a{
+			text-decoration: none;
+			@include flex;
+			@include align-items(center);
+			i{
+				font-size: 2rem;
+				color: #fff;
+			}
+			span{
+				color: #fff;
+				padding: 0 1rem;
+			}
+		}
+	}
+}
