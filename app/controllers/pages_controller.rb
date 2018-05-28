@@ -1,5 +1,19 @@
 class PagesController < ApplicationController
   def home
-    @time = Time.now
+  end
+
+  def about
+  end
+
+  def contact
+  end
+
+  def help
+  end
+
+  def terms
+  end
+
+  def privacy
   end
 end
